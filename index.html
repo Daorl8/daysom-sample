@@ -39,7 +39,7 @@
 </script>
 <style>
 @font-face{ font-family:"DS Serif"; src:url("ds-bellefair-v01.woff2") format("woff2"); font-weight:400; font-display:swap; }
-@font-face{ font-family:"DS Sans"; src:url("ds-pretendard-v01.woff2") format("woff2"); font-weight:300 600; font-display:swap; }
+@font-face{ font-family:"DS Sans"; src:url("ds-notoserif-v02.woff2") format("woff2"); font-weight:300 600; font-display:swap; }  /* v0.2 한글 = Noto Serif KR(다올 B) · 폴백은 안전 고딕 */
 :root{
   --ivory:#F7F4F0;     /* 바탕 (사장님 무드 사진 튤 · 벽 톤) */
   --greige:#ECE6DF;    /* 면 */
@@ -53,7 +53,7 @@
 }
 *{ box-sizing:border-box; }
 html{ scroll-behavior:auto; scroll-padding-top:118px; -webkit-text-size-adjust:100%; }
-body{ margin:0; background:var(--ivory); color:var(--ink); font-family:var(--sans); font-weight:300; font-size:16px; line-height:1.85; word-break:keep-all; overflow-wrap:break-word; -webkit-font-smoothing:antialiased; padding-bottom:calc(66px + env(safe-area-inset-bottom)); }
+body{ margin:0; background:var(--ivory); color:var(--ink); font-family:var(--sans); font-weight:400; font-size:16px; line-height:1.85; word-break:keep-all; overflow-wrap:break-word; -webkit-font-smoothing:antialiased; padding-bottom:calc(66px + env(safe-area-inset-bottom)); }
 img{ display:block; max-width:100%; height:auto; }
 a{ color:inherit; }
 b, strong{ font-weight:500; }
@@ -94,7 +94,7 @@ b, strong{ font-weight:500; }
 /* 섹션 제목: 영문 세리프(다올 "제목 폰트는 영어로 해서 고급지게") + 한글은 아래 작은 줄 */
 h2{ margin:0; font-weight:400; }
 h2 > span[lang="en"]{ display:block; font-family:var(--serif); font-size:clamp(2.1rem, 7vw, 3.4rem); line-height:1.1; letter-spacing:.14em; }
-h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:clamp(1rem, 3.4vw, 1.15rem); font-weight:400; line-height:1.6; letter-spacing:-.01em; color:var(--soft); }
+h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:clamp(1rem, 3.4vw, 1.15rem); font-weight:300; line-height:1.6; letter-spacing:-.01em; color:var(--soft); }
 .lead{ margin:16px 0 0; color:var(--soft); max-width:34em; }
 .sec{ padding:clamp(72px, 11vw, 136px) 0; }
 .sec.greige{ background:var(--greige); }
@@ -284,7 +284,7 @@ h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:c
         <li><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M8 54 C36 54 54 36 46 8" /></svg><b>DD</b></li>
       </ul>
       <p class="len reveal" aria-label="길이 8에서 14mm"><span>8</span><i></i><span>14mm</span></p>
-      <p class="curls-note reveal">컬 모양 그림은 이해를 돕기 위한 예시예요. 눈매 상담 후 어울리는 컬과 길이를 추천해 드려요.</p>
+      <p class="curls-note reveal">컬 모양 그림은 이해를 돕기 위한 예시예요. 눈매 상담 후 어울리는 컬과 길이를 <span class="nw">추천해 드려요.</span></p>
     </div>
   </section>
 
