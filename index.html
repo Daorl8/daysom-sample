@@ -69,13 +69,13 @@ b, strong{ font-weight:500; }
 .logo{ font-family:var(--serif); font-size:1.25rem; letter-spacing:.34em; text-decoration:none; white-space:nowrap; }
 .nav{ display:none; gap:30px; }
 .nav a, .snav a{ font-family:var(--serif); font-size:.92rem; letter-spacing:.2em; text-transform:lowercase; text-decoration:none; color:var(--soft); }
-.head-cta{ display:none; }
+.top .head-cta{ display:none; }
 .snav{ display:flex; border-top:1px solid var(--line); }
 .snav a{ flex:1 1 0; display:flex; align-items:center; justify-content:center; min-height:42px; white-space:nowrap; font-size:.82rem; letter-spacing:.12em; }
 @media (min-width:900px){
   .nav{ display:flex; } .snav{ display:none; } html{ scroll-padding-top:76px; }
   .top .bar{ height:70px; display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); }
-  .head-cta{ display:inline-flex; justify-self:end; }
+  .top .head-cta{ display:inline-flex; justify-self:end; }
 }
 @media (hover:hover){ .nav a:hover, .snav a:hover{ color:var(--ink); } }
 
@@ -135,7 +135,7 @@ h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:c
 .led dl{ margin:26px 0 0; border-top:1px solid var(--ink); }
 .led dl div{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px; padding:14px 0; border-bottom:1px solid var(--line); }
 .led dt small{ display:block; font-size:.84rem; color:var(--soft); }
-.led dd{ margin:0; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.led dd{ margin:0; white-space:nowrap; }
 @media (min-width:900px){ .led{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:72px; } }
 
 /* 컬 · 길이 */
@@ -163,7 +163,7 @@ h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:c
 .price ul{ list-style:none; margin:0; padding:0; }
 .price li{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px; align-items:baseline; padding:13px 0; border-bottom:1px solid var(--line); }
 .price li span small{ display:block; font-size:.82rem; color:var(--soft); }
-.price li em{ font-style:normal; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.price li em{ font-style:normal; white-space:nowrap; }
 .price-note{ margin-top:26px; color:var(--soft); font-size:.9rem; }
 @media (min-width:768px){ .price{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; } }
 
@@ -175,7 +175,6 @@ h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:c
 .hours caption{ text-align:left; padding-bottom:10px; }
 .hours th, .hours td{ text-align:left; padding:13px 0; border-bottom:1px solid var(--line); font-weight:300; }
 .hours th{ width:36%; font-weight:500; }
-.hours td{ font-variant-numeric:tabular-nums; }
 .book .btns{ max-width:none; }
 @media (min-width:900px){ .book{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:80px; } }
 
@@ -362,7 +361,7 @@ h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:c
 
   <section class="sec greige" id="visit" aria-labelledby="visit-h">
     <div class="wrap">
-      <h2 id="visit-h" class="reveal"><span lang="en">Visit</span><small>킹콩부대찌개 평택용죽점 <span class="nw">건물 2층</span></small></h2>
+      <h2 id="visit-h" class="reveal"><span lang="en">Visit</span><small>오시는길 안내</small></h2>
       <div class="visit">
         <dl class="reveal">
           <dt>address</dt>
