@@ -91,7 +91,10 @@ b, strong{ font-weight:500; }
 
 /* 제목 */
 .en{ display:block; font-family:var(--serif); font-size:.9rem; letter-spacing:.34em; text-transform:lowercase; color:var(--soft); }
-h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; letter-spacing:-.01em; margin:14px 0 0; }
+/* 섹션 제목: 영문 세리프(다올 "제목 폰트는 영어로 해서 고급지게") + 한글은 아래 작은 줄 */
+h2{ margin:0; font-weight:400; }
+h2 > span[lang="en"]{ display:block; font-family:var(--serif); font-size:clamp(2.1rem, 7vw, 3.4rem); line-height:1.1; letter-spacing:.14em; }
+h2 > small{ display:block; margin-top:16px; font-family:var(--sans); font-size:clamp(1rem, 3.4vw, 1.15rem); font-weight:400; line-height:1.6; letter-spacing:-.01em; color:var(--soft); }
 .lead{ margin:16px 0 0; color:var(--soft); max-width:34em; }
 .sec{ padding:clamp(72px, 11vw, 136px) 0; }
 .sec.greige{ background:var(--greige); }
@@ -245,8 +248,7 @@ h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; let
     <div class="wrap about">
       <figure class="reveal"><img src="ds-owner.webp" alt="데이솜뷰티 원장" width="720" height="900" loading="lazy" /></figure>
       <div>
-        <span class="en reveal">about</span>
-        <h2 id="about-h" class="reveal">속눈썹 전문샵으로 <span class="nw">속눈썹만 해요</span></h2>
+        <h2 id="about-h" class="reveal"><span lang="en">About</span><small>속눈썹 전문샵으로 <span class="nw">속눈썹만 해요</span></small></h2>
         <ul>
           <li class="reveal">퍼스널 눈매 상담</li>
           <li class="reveal">편안하고 안전한 시술</li>
@@ -259,8 +261,7 @@ h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; let
   <section class="sec greige" id="led" aria-labelledby="led-h">
     <div class="wrap led">
       <div>
-        <span class="en reveal">led lash</span>
-        <h2 id="led-h" class="reveal">LED 연장 전문샵</h2>
+        <h2 id="led-h" class="reveal"><span lang="en">LED Lash</span><small>LED 연장 전문샵</small></h2>
         <p class="lead reveal">여름철 물놀이에 인기 많은 LED 연장까지 편안하고 이물감 없는 <span class="nw">시술 약속드려요 !</span></p>
         <dl class="reveal">
           <div><dt>LED연장</dt><dd>75,000원</dd></div>
@@ -274,8 +275,7 @@ h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; let
 
   <section class="sec" id="curl" aria-labelledby="curl-h">
     <div class="wrap">
-      <span class="en reveal">curl &amp; length</span>
-      <h2 id="curl-h" class="reveal">총 5가지 컬(JC/C/CC/D/DD), <span class="nw">길이(8~14mm)까지</span> <span class="nw">보유하고 있어요</span></h2>
+      <h2 id="curl-h" class="reveal"><span lang="en">Curl &amp; Length</span><small>총 5가지 컬(JC/C/CC/D/DD), <span class="nw">길이(8~14mm)까지</span> <span class="nw">보유하고 있어요</span></small></h2>
       <ul class="curls reveal" aria-label="컬 종류">
         <li><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M8 54 L30 46 C42 41 48 34 52 26" /></svg><b>JC</b></li>
         <li><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M8 54 C26 50 42 40 50 24" /></svg><b>C</b></li>
@@ -292,8 +292,7 @@ h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; let
 
   <section class="sec" id="works" aria-labelledby="works-h">
     <div class="wrap">
-      <span class="en reveal">works</span>
-      <h2 id="works-h" class="reveal">시술 사진</h2>
+      <h2 id="works-h" class="reveal"><span lang="en">Works</span><small>시술 사진</small></h2>
       <div class="works">
         <figure class="reveal"><img src="ds-w1.webp" alt="속눈썹 연장 시술 후 눈매" width="720" height="720" loading="lazy" /></figure>
         <figure class="reveal"><img src="ds-w2.webp" alt="속눈썹 시술 후 눈매" width="720" height="720" loading="lazy" /></figure>
@@ -308,8 +307,7 @@ h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; let
 
   <section class="sec greige" id="price" aria-labelledby="price-h">
     <div class="wrap">
-      <span class="en reveal">price</span>
-      <h2 id="price-h" class="reveal">가격 안내</h2>
+      <h2 id="price-h" class="reveal"><span lang="en">Price</span><small>가격 안내</small></h2>
       <div class="price">
         <div class="reveal">
           <h3><span lang="en">extension</span><small>속눈썹 연장</small></h3>
@@ -346,8 +344,7 @@ h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; let
   <section class="sec" id="booking" aria-labelledby="book-h">
     <div class="wrap book">
       <div>
-        <span class="en reveal">reservation</span>
-        <h2 id="book-h" class="reveal">100% 예약제 | <span class="nw">당일예약 가능</span></h2>
+        <h2 id="book-h" class="reveal"><span lang="en">Reservation</span><small>100% 예약제 | <span class="nw">당일예약 가능</span></small></h2>
         <ul>
           <li class="reveal">예약문의 카카오톡 '데이솜뷰티' <span class="nw">or 네이버 예약</span></li>
           <li class="reveal">퍼스널 눈매 상담 | 편안하고 안전한 시술</li>
@@ -373,8 +370,7 @@ h2{ font-weight:400; font-size:clamp(1.45rem, 4.4vw, 2rem); line-height:1.5; let
 
   <section class="sec greige" id="visit" aria-labelledby="visit-h">
     <div class="wrap">
-      <span class="en reveal">visit</span>
-      <h2 id="visit-h" class="reveal">킹콩부대찌개 평택용죽점 <span class="nw">건물 2층</span></h2>
+      <h2 id="visit-h" class="reveal"><span lang="en">Visit</span><small>킹콩부대찌개 평택용죽점 <span class="nw">건물 2층</span></small></h2>
       <div class="visit">
         <dl class="reveal">
           <dt>address</dt>
